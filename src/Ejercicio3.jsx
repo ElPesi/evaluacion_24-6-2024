@@ -1,13 +1,20 @@
-import React from 'react'
 
-export default function Ejercicio3() {
+import React from 'react';
+import ElementoLista from './ElementoLista';
+
+const Ejercicio3 = () => {
   return (
     <div>
-      <h2>Ejercicio 3: Modularización</h2>
-      <p>Algunas materias de quinto año:</p>
+      <h2>Elementos de la lista:</h2>
       <ul>
-        {/* lista de materias */}
+        <ElementoLista mensaje="Informática Aplicada II" />
+        <ElementoLista mensaje="Programación II" />
+        <ElementoLista mensaje="Robótica" />
+        <ElementoLista mensaje="Matemática" />
+        <ElementoLista mensaje="Física" />
       </ul>
     </div>
-  )
-}
+  );
+};
+
+export default Ejercicio3;
